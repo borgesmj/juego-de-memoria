@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria</title>
+    <link rel="stylesheet" href="/Juego-de-Memoria/juego.de.memoria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <h1>Juego de Memoria</h1>
+    <p>Proyecto de Practica <br> para mi <a href="https://borgesmj.github.io/">portfolio</a></p>
+    
+    <!-- un div para establecer la dificultad del juego y
+        la cantidad de cartas que se pondran -->
+        <div id="dificultad">
+            <h2 >Elige tu dificultad</h2>
+            <div class="button-nivel facil" id="facil" >Facil</div>
+            <div class="button-nivel medio" id="medio" >Medio</div>
+            <div class="button-nivel dificil" id="dificil" >Dificil</div>
+        </div>
+        
+        <!-- luego que se selecciona el nivel -->
+        <!-- se imprime en pantalla el tablero de juego -->
+        <div id="tablero">
+        <!-- <div>
+                <div class="area-tarjeta">
+                    <div class="tarjeta">
+                        <div class="cara trasera">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="cara superior" id="trasera{i}">
+                        <i class="fa-regular fa-circle-question"></i>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+    </div>
+        
+        <!-- añadiremos un div que llevará el contador de puntos
+        y el boton de reiniciar -->
+
+        <div class="display">
+            <div id="btnRestart" onclick="reiniciarJuego()"> Restart</div>
+            <div>Puntos: <span  id="contador">0</span></div>
+        </div>
+
+    
+    
+    <script src="/Juego-de-Memoria/main.js"></script>
+</body>
+</html>
